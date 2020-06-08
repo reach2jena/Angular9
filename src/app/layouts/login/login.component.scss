@@ -1,0 +1,37 @@
+.mat-card{
+  width: 25%;
+  background-position: 0vmin;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-size: 10%;
+   background-color: rgba(92, 75, 75, 0.5);
+   box-sizing: 3px;
+   box-shadow: whitesmoke;
+}
+.bg-img{
+  background-image: url(../../../assets/images/manpasand1.jpg);
+  background-size: cover;
+  background-position: 0vmin;
+  width: auto;
+  height: 680px;
+  color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  font-size: 10%;
+}
+.text_colour{
+  color: whitesmoke; 
+}
+
+input, select, textarea{
+  color: #d6cbcb;
+}
+
+textarea:focus, input:focus {
+  color: #d8d4d4;
+}
+.mheader{
+  margin-left: 50px;
+  margin-top: 50px;
+}

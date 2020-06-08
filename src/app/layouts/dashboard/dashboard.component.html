@@ -1,0 +1,110 @@
+
+<mat-sidenav-container  >
+  <mat-sidenav mode="side" #sidenav opened color="primary" >
+    
+    <header class="header"> Options </header>
+    <div class="sidemenu" >
+
+    
+<ul>
+        <li>
+         
+          <a >
+            <i class="fas fa-qrcode">OrderMenu</i> </a>
+            <a href="">
+              <i class="fas fa-qrcode">Track Delivery</i> </a>
+              <a href="">
+                <i class="fas fa-qrcode">Today's special</i> </a>
+                <a href="">
+                  <i class="fas fa-qrcode">Cancel Order</i> </a>
+                  <a href="">
+                    <i class="fas fa-qrcode">Contacts</i> </a>
+         
+          
+         <li>
+           
+      </ul>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+     Man Pasand Bhojan
+      <span class="toolbar-spacer">
+        
+      </span>     
+      welcome 
+      <mat-icon>verified_user</mat-icon>
+      Rakesh Jena
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>settings_applications</mat-icon>
+      </button>
+             <mat-menu #appMenu="matMenu">
+          <ng-template matMenuContent let-name="name">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>Log off {{name}}</button>
+          </ng-template>
+        </mat-menu>
+    
+    </mat-toolbar>
+    <div class="main-content">
+      <div>
+        <mat-grid-list cols="2" rowHeight="2:2">
+          <mat-grid-tile>1
+            <mat-card>
+              <mat-card-title>Macha Besara</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
+                </p> 
+                <img mat-card-image src="../../../assets/images/machabesara.jpg">
+              </mat-card-content>
+                         
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>Chingudi sukhua</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
+                </p> 
+                <img mat-card-image src="../../../assets/images/chingudisukhua.jpg">
+              </mat-card-content>
+                         
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card>
+              <mat-card-title>kankada Kasha</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
+                </p> 
+                <img mat-card-image src="../../../assets/images/kankada.jpg">
+              </mat-card-content>
+                         
+            </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-card >
+              <mat-card-title>Khasi Kasha</mat-card-title>
+              <mat-card-content>
+                <p>
+                  Fresh Rohu Fish added with minimal spice and cinamon. Sauted with fresh tomato puree.
+                </p> 
+                <img mat-card-image src="../../../assets/images/mutton.jpg">
+              </mat-card-content>
+                         
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+    
+  </mat-sidenav-content>
+</mat-sidenav-container>
