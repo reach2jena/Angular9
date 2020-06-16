@@ -1,0 +1,10 @@
+sudo : required
+
+Services:
+  -docker
+
+before_install:
+  -docker build -t rakesh/angular-app .
+
+script: 
+  -docker run rakesh/angular-app
