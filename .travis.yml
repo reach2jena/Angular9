@@ -7,4 +7,4 @@ Services:
 script: 
 
   -docker build -t angular-app -f Dockerfile.dev .
-  -docker run angular-app
+ 
