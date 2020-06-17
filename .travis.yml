@@ -4,8 +4,8 @@ services:
   -docker
 
 before_install:
-  -docker build -t rakesh/dockerangular -f Dockerfile.dev .
+  - docker build -t rakesh/dockerangular -f Dockerfile.dev .
 
 script: 
-  -docker run rakesh/dockerangular npm run test -- --coverage
+  - docker run rakesh/dockerangular npm run test -- --coverage
  
